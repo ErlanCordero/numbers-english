@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Números en Inglés</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>¿Qué número es este?</h1>
+        <div id="number-display" class="number-display"></div>
+        <div id="options" class="options"></div>
+        <div id="feedback" class="feedback"></div>
+        <button id="repeat-button" class="button" onclick="playCurrentAudio()">🔊 Repetir Audio</button>
+        <button id="next-button" class="button" onclick="nextQuestion()">➡️ Siguiente</button>
+    </div>
+    <audio id="correct-sound" src="correct.mp3"></audio>
+    <audio id="wrong-sound" src="wrong.mp3"></audio>
+    <audio id="number-audio" src=""></audio>
+    <script src="script.js"></script>
+</body>
+</html>
